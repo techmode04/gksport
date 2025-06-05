@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - GK Sports & Nutrition</title>
+  <style>
+    :root {
+      --primary-color: #ff6f00;
+      --secondary-color: #fff;
+      --text-color: #333;
+      --input-bg: #fdf6f0;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--secondary-color);
+      color: var(--text-color);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 30px;
+      background: var(--secondary-color);
+      border: 1px solid #f2e5da;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(255, 111, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: var(--primary-color);
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: var(--input-bg);
+      margin-top: 6px;
+      font-size: 15px;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 14px;
+      background: var(--primary-color);
+      color: var(--secondary-color);
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background: #e65c00;
+    }
+
+    .info {
+      margin-top: 40px;
+      border-top: 1px solid #f0e0d6;
+      padding-top: 20px;
+    }
+
+    .info h3 {
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+
+    .info p {
+      margin: 6px 0;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 20px;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Contact Us</h1>
+
+    <form action="mailto:ganeshkashid056@gmail.com" method="post" enctype="text/plain">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="info">
+      <h3>GK Sports and Nutrition</h3>
+      <p><strong>Address:</strong> Shivaji Chowk, Beed, Maharashtra - 431122</p>
+      <p><strong>Phone:</strong> +91 93569 13758</p>
+      <p><strong>Email:</strong> ganeshkashid056@gmail.com</p>
+      <p><strong>Business Hours:</strong> Mon - Sat: 9:00 AM – 8:00 PM</p>
+    </div>
+  </div>
+</body>
+</html>
+
